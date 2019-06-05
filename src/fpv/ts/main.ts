@@ -74,9 +74,6 @@ function keydownhandler(ev) {
         // lookAt
         "l": function () { _camera.updateLook("r"); },
         "j": function () { _camera.updateLook("l"); },
-
-        // test
-        "p": function () { _camera.test(); }
     };
 
     const keycode = ev.key;

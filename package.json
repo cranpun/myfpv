@@ -4,8 +4,7 @@
   "description": "my first person view",
   "main": "index.js",
   "scripts": {
-    "fpv": "npx parcel src/fpv/index.html -d dist/fpv",
-    "fpc": "npx parcel src/fpc/index.html -d dist/fpc"
+    "server": "npx parcel src/index.html"
 
   },
   "keywords": [],
