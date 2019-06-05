@@ -36,6 +36,7 @@ export default class FpvCamera {
         this._pos = new Vector3(0, 0, 0);
         this._look = new Vector3(FpvCamera.LEN, 0, 0); // 初期値はx方向
         this._angle = 0;
+        this._camera.lookAt(this._look);
     }
 
     // *******************************************************
