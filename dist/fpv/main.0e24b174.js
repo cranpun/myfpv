@@ -67454,6 +67454,8 @@ function () {
     this._look = new THREE_1.Vector3(FpvCamera.LEN, 0, 0); // 初期値はx方向
 
     this._angle = 0;
+
+    this._camera.lookAt(this._look);
   } // *******************************************************
   // method
   // *******************************************************
@@ -67702,6 +67704,10 @@ function keydownhandler(ev) {
     },
     "j": function j() {
       _camera.updateLook("l");
+    },
+    // test
+    "p": function p() {
+      _camera.test();
     }
   };
   var keycode = ev.key;
@@ -67834,7 +67840,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58633" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65467" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
